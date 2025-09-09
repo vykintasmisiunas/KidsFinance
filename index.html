@@ -1,0 +1,848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #0d0f13; -webkit-text-stroke: #0d0f13; background-color: #f4f5f6}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #0d0f13; -webkit-text-stroke: #0d0f13; background-color: #f4f5f6; min-height: 17.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Kids Money Planner 💰&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- PWA Meta Tags --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="theme-color" content="#667eea"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="apple-mobile-web-app-status-bar-style" content="default"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="apple-mobile-web-app-title" content="Money Planner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content="Track your money month by month - Kids Money Planner"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- PWA Icons --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiM2NjdlZWEiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMiAxNWwtNS01aDNWOGg0djRoM2wtNSA1eiIvPgo8L3N2Zz4KPC9zdmc+"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzY2N2VlYSIvPgo8dGV4dCB4PSIxNiIgeT0iMjIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfkrA8L3RleHQ+Cjwvc3ZnPg=="&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- PWA Manifest --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIktpZHMgTW9uZXkgUGxhbm5lciIsCiAgInNob3J0X25hbWUiOiAiTW9uZXkgUGxhbm5lciIsCiAgImRlc2NyaXB0aW9uIjogIlRyYWNrIHlvdXIgbW9uZXkgbW9udGggYnkgbW9udGgiLAogICJzdGFydF91cmwiOiAiLiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgInRoZW1lX2NvbG9yIjogIiM2NjdlZWEiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiM2NjdlZWEiLAogICJpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUIzYVdSMGFEMGlNVGt5SWlCb1pXbG5hSFE5SWpFNU1pSWdkbWxsZDBKdmVEMGlNQ0F3SURFNU1pQXhPVElpSUdacGJHdzlJbTV2Ym1VaUlIaHRiRzV6UFNKb2RIUndPaTh2ZDNkM0xuY3pMbTl5Wnk4eU1EQXdMM04yWnlJK0NqeHlaV04wSUhkcFpIUm9QU0l4T1RJaUlHaGxhV2RvZEQwaU1Ua3lJaUJ5ZUQwaU1qUWlJR1pwYkd3OUlpTTJOamRsWldFaUx6NEtQSE4yWnlCNFBTSTBPQ0lnZVQwaU5EZ2lJSGRwWkhSb1BTSTVOaUlnYUdWcFoyaDBQU0k1TmlJZ2RtbGxkMEp2ZUQwaU1DQXdJREkwSURJMElpQm1hV3hzUFNKM2FHbDBaU0krQ2p4d1lYUm9JR1E5SWsweE1pQXlRelo0TkRnZ01pQXlJRFl1TkRnZ01pQXhNaUF5Y3pRdU5EZ2dNVEFnTVRBZ01UQWdNVEFnTVRBdE5DNDBPQ0F4TUMweE1DMHhNQzB4TUZNeE55NDFNaUF5SURFeUlESjZiUzB5SURFMWJDMDFMVFZvTTFZNGFEUjJOR2d6YkMwMUlEVjZJaTgrQ2p3dmMzWm5QZ284TDNOMlp6NEsiLAogICAgICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9LAogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjNhV1IwYUQwaU5USXhJaUJvWldsbmFIUTlJalV5TVNJZ2RtbGxkMEp2ZUQwaU1DQXdJRFV5TVNBMU1qRWlJR1pwYkd3OUltNXZibVVpSUhodGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh5TURBd0wzTjJaeUkrQ2p4eVpXTjBJSGRwWkhSb1BTSTFNakVpSUdobGFXZG9kRDBpTlRJeElpQnllRDBpTmpRaUlHWnBiR3c5SWlNMk5qZGxaV0VpTHo0S1BIUmxlSFFnZUQwaU1UWWlJSGs5SWpJeUlpQm1iMjUwTFdaaGJXbHNlVDBpUVhKcFlXd2lJR1p2Ym5RdGMybDZaVDBpTVRnaUlHWnBiR3c5SW5kb2FYUmxJaUIwWlhoMExXRnVZMmh2Y2owaWJXbGtaR3hsSWo3d240S3dQQzlwWlhoMFBnbzhMM04yWno0PSIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0KICBdCn0="&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&amp;display=swap');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body { font-family: 'Fredoka', sans-serif; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-shadow { box-shadow: 0 10px 25px rgba(0,0,0,0.1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.bounce-in { animation: bounceIn 0.6s ease-out; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes bounceIn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>0% { transform: scale(0.3); opacity: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>50% { transform: scale(1.05); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>70% { transform: scale(0.9); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>100% { transform: scale(1); opacity: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* PWA Install Button */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.install-button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>right: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 1000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Offline indicator */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.offline-indicator {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>top: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>left: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>right: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #f59e0b;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 1001;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="gradient-bg min-h-screen p-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Offline Indicator --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="offlineIndicator" class="offline-indicator"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>📱 You're offline - but your data is still saved locally!</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- PWA Install Button --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button id="installButton" class="install-button bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>📱 Install App</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-7xl mx-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Header --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="text-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-4xl md:text-5xl font-bold text-white mb-2"&gt;💰 Kids Money Planner 💰&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-xl text-purple-100"&gt;Track your money month by month!&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div id="dataStatus" class="text-sm text-purple-200 mt-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>💾 Data automatically saved on your device</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Month Selector --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-3xl p-6 mb-8 card-shadow"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row justify-between items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-2xl font-bold text-gray-800 mb-4 md:mb-0"&gt;📅 Current Month&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center space-x-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button onclick="changeMonth(-1)" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-xl"&gt;← Previous&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xl font-bold text-gray-800" id="currentMonth"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button onclick="changeMonth(1)" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-xl"&gt;Next →&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Account Balances --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-3xl p-6 mb-8 card-shadow"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl font-bold text-gray-800 mb-4 text-center"&gt;💳 Account Balances&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-red-100 rounded-2xl p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-3xl mb-2"&gt;🛍️&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-sm text-red-600 font-medium"&gt;Expenses Account&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-lg font-bold text-red-700" id="expensesBalance"&gt;$0.00&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-red-600 mt-1"&gt;💵 Cash: &lt;span id="expensesCash"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-red-600"&gt;🏦 Account: &lt;span id="expensesAccount"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-blue-100 rounded-2xl p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-3xl mb-2"&gt;🏦&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-sm text-blue-600 font-medium"&gt;Savings Account&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-lg font-bold text-blue-700" id="savingsBalance"&gt;$0.00&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-blue-600 mt-1"&gt;💵 Cash: &lt;span id="savingsCash"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-blue-600"&gt;🏦 Account: &lt;span id="savingsAccount"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-purple-100 rounded-2xl p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-3xl mb-2"&gt;📈&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-sm text-purple-600 font-medium"&gt;Investments Account&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-lg font-bold text-purple-700" id="investmentsBalance"&gt;$0.00&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-purple-600 mt-1"&gt;💵 Cash: &lt;span id="investmentsCash"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-purple-600"&gt;🏦 Account: &lt;span id="investmentsAccount"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Monthly Cash Flow Summary --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-3xl p-6 mb-8 card-shadow"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl font-bold text-gray-800 mb-4 text-center"&gt;📊 This Month's Cash Flow&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-red-100 rounded-2xl p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-3xl mb-2"&gt;🛍️&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-sm text-red-600 font-medium"&gt;Expenses Account&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-green-600 mt-1"&gt;+&lt;span id="expensesIncome"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-red-600"&gt;-&lt;span id="expensesPayments"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-lg font-bold text-red-700 mt-1" id="expensesNet"&gt;$0.00&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-blue-100 rounded-2xl p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-3xl mb-2"&gt;🏦&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-sm text-blue-600 font-medium"&gt;Savings Account&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-green-600 mt-1"&gt;+&lt;span id="savingsIncome"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-red-600"&gt;-&lt;span id="savingsPayments"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-lg font-bold text-blue-700 mt-1" id="savingsNet"&gt;$0.00&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-purple-100 rounded-2xl p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-3xl mb-2"&gt;📈&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-sm text-purple-600 font-medium"&gt;Investments Account&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-green-600 mt-1"&gt;+&lt;span id="investmentsIncome"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-red-600"&gt;-&lt;span id="investmentsPayments"&gt;$0.00&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-lg font-bold text-purple-700 mt-1" id="investmentsNet"&gt;$0.00&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-cols-1 lg:grid-cols-2 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Income Section --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-3xl p-6 card-shadow"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-2xl font-bold text-gray-800 mb-4"&gt;💸 Add Income&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="space-y-4 mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Income Source 💰&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;select id="incomeSource" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Dad"&gt;From Dad 👨&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Mom"&gt;From Mom 👩&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Allowance"&gt;Weekly Allowance 📅&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Chores"&gt;Chores 🧹&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Gift"&gt;Gift Money 🎁&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Other"&gt;Other 💫&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Amount 💵&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="incomeAmount" placeholder="0.00" step="0.01" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Allocate to Account 🎯&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;select id="incomeAccount" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="expenses"&gt;Expenses Account 🛍️&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="savings"&gt;Savings Account 🏦&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="investments"&gt;Investments Account 📈&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Money Type 💳&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;select id="incomeType" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="cash"&gt;Cash 💵&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="account"&gt;Bank Account 🏦&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Date 📅&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;input type="date" id="incomeDate" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button onclick="addIncome()" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-colors"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>➕ Add Income</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="mt-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-bold text-gray-800 mb-3"&gt;📝 This Month's Income&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div id="incomeList" class="space-y-2 max-h-60 overflow-y-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-gray-500 text-center py-4"&gt;No income added yet! 💰&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Payments Section --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-3xl p-6 card-shadow"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-2xl font-bold text-gray-800 mb-4"&gt;🛒 Add Payment&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="space-y-4 mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;What did you buy? 🛍️&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;input type="text" id="expenseItem" placeholder="Candy, toy, snack..." class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Category 📂&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;select id="expenseCategory" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Food"&gt;Food &amp; Snacks 🍕&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Toys"&gt;Toys &amp; Games 🎮&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Clothes"&gt;Clothes 👕&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Books"&gt;Books &amp; School 📚&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Entertainment"&gt;Entertainment 🎬&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="Other"&gt;Other 💫&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Amount 💵&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="expenseAmount" placeholder="0.00" step="0.01" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Pay from Account 🎯&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;select id="paymentAccount" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="expenses"&gt;Expenses Account 🛍️&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="savings"&gt;Savings Account 🏦&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="investments"&gt;Investments Account 📈&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Payment Type 💳&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;select id="paymentType" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="cash"&gt;Cash 💵&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;option value="account"&gt;Bank Account 🏦&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label class="block text-sm font-medium text-gray-700 mb-2"&gt;Date 📅&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;input type="date" id="expenseDate" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-400 focus:outline-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button onclick="addExpense()" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-xl transition-colors"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>➕ Add Payment</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="mt-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-bold text-gray-800 mb-3"&gt;📝 This Month's Payments&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div id="expensesList" class="space-y-2 max-h-60 overflow-y-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-gray-500 text-center py-4"&gt;No payments yet! 🎉&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Yearly Analysis Table --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-3xl p-6 card-shadow mt-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl font-bold text-gray-800 mb-6 text-center"&gt;📈 Yearly Analysis&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="overflow-x-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;table class="w-full text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;thead&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;tr class="border-b-2 border-gray-200"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-left py-3 px-2 font-bold text-gray-700"&gt;Month&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-center py-3 px-2 font-bold text-red-600"&gt;🛍️ Expenses&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-center py-3 px-2 font-bold text-blue-600"&gt;🏦 Savings&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-center py-3 px-2 font-bold text-purple-600"&gt;📈 Investments&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-center py-3 px-2 font-bold text-gray-700"&gt;Total&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;tr class="text-xs text-gray-500"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-left py-1 px-2"&gt;&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-center py-1 px-2"&gt;In | Out | Net&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-center py-1 px-2"&gt;In | Out | Net&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-center py-1 px-2"&gt;In | Out | Net&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;th class="text-center py-1 px-2"&gt;In | Out | Net&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/thead&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;tbody id="yearlyAnalysisTable"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;!-- Table content will be populated by JavaScript --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/tbody&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/table&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let currentDate = new Date();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let monthlyData = {};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let deferredPrompt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// PWA Service Worker Registration</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if ('serviceWorker' in navigator) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>window.addEventListener('load', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>navigator.serviceWorker.register('data:text/javascript;base64,Y29uc3QgQ0FDSEVfTkFNRSA9ICdraWRzLW1vbmV5LXBsYW5uZXItdjEnOwpjb25zdCB1cmxzVG9DYWNoZSA9IFsKICAnLycsCiAgJy9pbmRleC5odG1sJywKICAnL21hbmlmZXN0Lmpzb24nCl07CgpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2luc3RhbGwnLCBldmVudCA9PiB7CiAgZXZlbnQud2FpdFVudGlsKAogICAgY2FjaGVzLm9wZW4oQ0FDSEVfTkFNRSkKICAgICAgLnRoZW4oY2FjaGUgPT4gewogICAgICAgIHJldHVybiBjYWNoZS5hZGRBbGwodXJsc1RvQ2FjaGUpOwogICAgICB9KQogICk7Cn0pOwoKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIGV2ZW50ID0+IHsKICBldmVudC5yZXNwb25kV2l0aCgKICAgIGNhY2hlcy5tYXRjaChldmVudC5yZXF1ZXN0KQogICAgICAudGhlbihyZXNwb25zZSA9PiB7CiAgICAgICAgcmV0dXJuIHJlc3BvbnNlIHx8IGZldGNoKGV2ZW50LnJlcXVlc3QpOwogICAgICB9KQogICk7Cn0pOw==')</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>.then(registration =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>console.log('SW registered: ', registration);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>})</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>.catch(registrationError =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>console.log('SW registration failed: ', registrationError);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// PWA Install Prompt</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.addEventListener('beforeinstallprompt', (e) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>e.preventDefault();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>deferredPrompt = e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('installButton').style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('installButton').addEventListener('click', async () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (deferredPrompt) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>deferredPrompt.prompt();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const { outcome } = await deferredPrompt.userChoice;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (outcome === 'accepted') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>document.getElementById('installButton').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>deferredPrompt = null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Online/Offline Status</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.addEventListener('online', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('offlineIndicator').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.addEventListener('offline', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('offlineIndicator').style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Local Storage Functions</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function saveData() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('kidsMoneyPlannerData', JSON.stringify(monthlyData));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('dataStatus').textContent = '💾 Data saved automatically!';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>document.getElementById('dataStatus').textContent = '💾 Data automatically saved on your device';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}, 2000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (error) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.error('Error saving data:', error);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('dataStatus').textContent = '⚠️ Error saving data';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function loadData() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const savedData = localStorage.getItem('kidsMoneyPlannerData');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (savedData) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthlyData = JSON.parse(savedData);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>document.getElementById('dataStatus').textContent = '💾 Data loaded from your device';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (error) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.error('Error loading data:', error);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>monthlyData = {};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function getCurrentMonthKey() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return `${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function initializeMonth() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const monthKey = getCurrentMonthKey();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!monthlyData[monthKey]) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>monthlyData[monthKey] = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>income: [],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>expenses: [],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>accounts: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>expenses: { cash: 0, account: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>savings: { cash: 0, account: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>investments: { cash: 0, account: 0 }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>saveData();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function updateMonthDisplay() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const monthNames = ["January", "February", "March", "April", "May", "June",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"July", "August", "September", "October", "November", "December"];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('currentMonth').textContent =<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Set default dates to current month</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const today = new Date();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const dateString = today.toISOString().split('T')[0];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('incomeDate').value = dateString;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('expenseDate').value = dateString;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function changeMonth(direction) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>currentDate.setMonth(currentDate.getMonth() + direction);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>initializeMonth();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateMonthDisplay();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateAllDisplays();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function addIncome() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const source = document.getElementById('incomeSource').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const amount = parseFloat(document.getElementById('incomeAmount').value);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const account = document.getElementById('incomeAccount').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const type = document.getElementById('incomeType').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const date = document.getElementById('incomeDate').value;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (amount &gt; 0 &amp;&amp; date) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const monthKey = getCurrentMonthKey();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const income = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>source: source,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>amount: amount,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>account: account,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>type: type,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>date: date</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>monthlyData[monthKey].income.push(income);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>monthlyData[monthKey].accounts[account][type] += amount;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Clear inputs</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('incomeAmount').value = '';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>updateAllDisplays();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>saveData();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function addExpense() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const item = document.getElementById('expenseItem').value.trim();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const category = document.getElementById('expenseCategory').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const amount = parseFloat(document.getElementById('expenseAmount').value);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const account = document.getElementById('paymentAccount').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const type = document.getElementById('paymentType').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const date = document.getElementById('expenseDate').value;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (item &amp;&amp; amount &gt; 0 &amp;&amp; date) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const monthKey = getCurrentMonthKey();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Check if account has sufficient balance</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (monthlyData[monthKey].accounts[account][type] &gt;= amount) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const expense = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>item: item,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>category: category,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>amount: amount,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>account: account,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>type: type,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>date: date</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthlyData[monthKey].expenses.push(expense);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthlyData[monthKey].accounts[account][type] -= amount;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Clear inputs</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>document.getElementById('expenseItem').value = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>document.getElementById('expenseAmount').value = '';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>updateAllDisplays();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>saveData();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>alert(`Not enough money in ${account} ${type}! Available: $${monthlyData[monthKey].accounts[account][type].toFixed(2)}`);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function updateAllDisplays() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const monthKey = getCurrentMonthKey();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const data = monthlyData[monthKey];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Recalculate all account balances from scratch based on transactions</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Reset all account balances to zero first</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Object.keys(monthlyData).forEach(month =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>monthlyData[month].accounts = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>expenses: { cash: 0, account: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>savings: { cash: 0, account: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>investments: { cash: 0, account: 0 }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Recalculate balances from all transactions</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Object.keys(monthlyData).forEach(month =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const monthData = monthlyData[month];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Add income</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>monthData.income.forEach(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthData.accounts[item.account][item.type] += item.amount;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Subtract expenses</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>monthData.expenses.forEach(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthData.accounts[item.account][item.type] -= item.amount;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Calculate cumulative account balances across all months</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const cumulativeBalances = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>expenses: { cash: 0, account: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>savings: { cash: 0, account: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>investments: { cash: 0, account: 0 }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Object.keys(monthlyData).forEach(month =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>cumulativeBalances.expenses.cash += monthlyData[month].accounts.expenses.cash;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>cumulativeBalances.expenses.account += monthlyData[month].accounts.expenses.account;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>cumulativeBalances.savings.cash += monthlyData[month].accounts.savings.cash;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>cumulativeBalances.savings.account += monthlyData[month].accounts.savings.account;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>cumulativeBalances.investments.cash += monthlyData[month].accounts.investments.cash;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>cumulativeBalances.investments.account += monthlyData[month].accounts.investments.account;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Update account balances with cumulative totals</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>['expenses', 'savings', 'investments'].forEach(accountType =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const totalBalance = cumulativeBalances[accountType].cash + cumulativeBalances[accountType].account;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById(`${accountType}Balance`).textContent = `$${totalBalance.toFixed(2)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById(`${accountType}Cash`).textContent = `$${cumulativeBalances[accountType].cash.toFixed(2)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById(`${accountType}Account`).textContent = `$${cumulativeBalances[accountType].account.toFixed(2)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Calculate monthly cash flow by account</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const accountCashFlow = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>expenses: { income: 0, payments: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>savings: { income: 0, payments: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>investments: { income: 0, payments: 0 }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Calculate income by account</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>data.income.forEach(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>accountCashFlow[item.account].income += item.amount;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Calculate payments by account</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>data.expenses.forEach(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>accountCashFlow[item.account].payments += item.amount;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Update cash flow displays</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>['expenses', 'savings', 'investments'].forEach(account =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const income = accountCashFlow[account].income;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const payments = accountCashFlow[account].payments;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const net = income - payments;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById(`${account}Income`).textContent = `$${income.toFixed(2)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById(`${account}Payments`).textContent = `$${payments.toFixed(2)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById(`${account}Net`).textContent = `$${net.toFixed(2)}`;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Update net flow color</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const netElement = document.getElementById(`${account}Net`);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (net &lt; 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>netElement.className = 'font-bold text-red-600';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else if (net &gt; 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>netElement.className = 'font-bold text-green-600';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>netElement.className = 'font-bold text-gray-600';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Update lists</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateIncomeList();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateExpensesList();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Update yearly analysis</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateYearlyAnalysis();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function updateIncomeList() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const monthKey = getCurrentMonthKey();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const incomeList = document.getElementById('incomeList');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const income = monthlyData[monthKey].income;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (income.length === 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>incomeList.innerHTML = '&lt;div class="text-gray-500 text-center py-4"&gt;No income added yet! 💰&lt;/div&gt;';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const accountEmojis = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>expenses: '🛍️',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>savings: '🏦',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>investments: '📈'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let html = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; income.length; i++) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const item = income[i];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>html += `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between items-center bg-green-50 rounded-lg p-3 bounce-in"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="font-medium text-gray-800"&gt;${item.source} → ${accountEmojis[item.account]} ${item.account}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-sm text-gray-500"&gt;${new Date(item.date).toLocaleDateString()} • ${item.type === 'cash' ? '💵 Cash' : '🏦 Account'}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="font-bold text-green-600 mr-3"&gt;+$${item.amount.toFixed(2)}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button onclick="deleteIncomeByIndex(${i})" class="bg-red-500 hover:bg-red-600 text-white text-sm px-3 py-2 rounded-lg transition-colors font-bold"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>🗑️ Delete</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>incomeList.innerHTML = html;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function updateExpensesList() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const monthKey = getCurrentMonthKey();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const expensesList = document.getElementById('expensesList');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const expenses = monthlyData[monthKey].expenses;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (expenses.length === 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>expensesList.innerHTML = '&lt;div class="text-gray-500 text-center py-4"&gt;No payments yet! 🎉&lt;/div&gt;';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const accountEmojis = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>expenses: '🛍️',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>savings: '🏦',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>investments: '📈'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let html = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; expenses.length; i++) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const item = expenses[i];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>html += `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between items-center bg-red-50 rounded-lg p-3 bounce-in"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="font-medium text-gray-800"&gt;${item.item} (${accountEmojis[item.account]} ${item.account})&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-sm text-gray-500"&gt;${item.category} • ${new Date(item.date).toLocaleDateString()} • ${item.type === 'cash' ? '💵 Cash' : '🏦 Account'}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="font-bold text-red-600 mr-3"&gt;-$${item.amount.toFixed(2)}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button onclick="deleteExpenseByIndex(${i})" class="bg-red-500 hover:bg-red-600 text-white text-sm px-3 py-2 rounded-lg transition-colors font-bold"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>🗑️ Delete</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>expensesList.innerHTML = html;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function showCustomConfirm(message, onConfirm, onCancel) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Create custom confirmation dialog</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const overlay = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overlay.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overlay.innerHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-2xl p-6 max-w-sm mx-4 shadow-2xl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-lg font-bold text-gray-800 mb-4"&gt;${message}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex space-x-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button id="confirmYes" class="flex-1 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-xl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>Yes, Delete</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button id="confirmNo" class="flex-1 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-xl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>Cancel</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>`;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.body.appendChild(overlay);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('confirmYes').onclick = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.body.removeChild(overlay);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>onConfirm();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('confirmNo').onclick = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.body.removeChild(overlay);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>onCancel();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function deleteIncomeByIndex(index) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const monthKey = getCurrentMonthKey();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>showCustomConfirm(</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>'Are you sure you want to delete this income entry?',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Remove the item at the specific index</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthlyData[monthKey].income.splice(index, 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>updateAllDisplays();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>saveData();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// User cancelled - do nothing</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function deleteExpenseByIndex(index) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const monthKey = getCurrentMonthKey();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>showCustomConfirm(</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>'Are you sure you want to delete this payment entry?',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Remove the item at the specific index</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthlyData[monthKey].expenses.splice(index, 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>updateAllDisplays();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>saveData();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// User cancelled - do nothing</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function updateYearlyAnalysis() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const currentYear = currentDate.getFullYear();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const yearlyAnalysisTable = document.getElementById('yearlyAnalysisTable');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let tableHTML = '';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Calculate totals for the year</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let yearTotals = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>expenses: { income: 0, payments: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>savings: { income: 0, payments: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>investments: { income: 0, payments: 0 }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Generate rows for each month of the current year</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>for (let month = 0; month &lt; 12; month++) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const monthKey = `${currentYear}-${String(month + 1).padStart(2, '0')}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const monthData = monthlyData[monthKey];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Calculate monthly cash flow by account</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const monthCashFlow = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>expenses: { income: 0, payments: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>savings: { income: 0, payments: 0 },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>investments: { income: 0, payments: 0 }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (monthData) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Calculate income by account</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthData.income.forEach(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>monthCashFlow[item.account].income += item.amount;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>yearTotals[item.account].income += item.amount;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Calculate payments by account</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>monthData.expenses.forEach(item =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>monthCashFlow[item.account].payments += item.amount;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>yearTotals[item.account].payments += item.amount;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Calculate nets</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const expensesNet = monthCashFlow.expenses.income - monthCashFlow.expenses.payments;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const savingsNet = monthCashFlow.savings.income - monthCashFlow.savings.payments;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const investmentsNet = monthCashFlow.investments.income - monthCashFlow.investments.payments;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const totalNet = expensesNet + savingsNet + investmentsNet;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Determine if this is the current month</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const isCurrentMonth = month === currentDate.getMonth();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const rowClass = isCurrentMonth ? 'bg-purple-50 font-medium' : 'hover:bg-gray-50';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tableHTML += `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;tr class="${rowClass} border-b border-gray-100"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="py-2 px-2 font-medium"&gt;${monthNames[month]} ${currentYear}&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="py-2 px-2 text-center text-xs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-green-600"&gt;$${monthCashFlow.expenses.income.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-red-600"&gt;$${monthCashFlow.expenses.payments.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold ${expensesNet &gt;= 0 ? 'text-green-600' : 'text-red-600'}"&gt;$${expensesNet.toFixed(0)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="py-2 px-2 text-center text-xs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-green-600"&gt;$${monthCashFlow.savings.income.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-red-600"&gt;$${monthCashFlow.savings.payments.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold ${savingsNet &gt;= 0 ? 'text-green-600' : 'text-red-600'}"&gt;$${savingsNet.toFixed(0)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="py-2 px-2 text-center text-xs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-green-600"&gt;$${monthCashFlow.investments.income.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-red-600"&gt;$${monthCashFlow.investments.payments.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold ${investmentsNet &gt;= 0 ? 'text-green-600' : 'text-red-600'}"&gt;$${investmentsNet.toFixed(0)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;td class="py-2 px-2 text-center text-xs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-green-600"&gt;$${(monthCashFlow.expenses.income + monthCashFlow.savings.income + monthCashFlow.investments.income).toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-red-600"&gt;$${(monthCashFlow.expenses.payments + monthCashFlow.savings.payments + monthCashFlow.investments.payments).toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold ${totalNet &gt;= 0 ? 'text-green-600' : 'text-red-600'}"&gt;$${totalNet.toFixed(0)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Add yearly totals row</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const yearExpensesNet = yearTotals.expenses.income - yearTotals.expenses.payments;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const yearSavingsNet = yearTotals.savings.income - yearTotals.savings.payments;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const yearInvestmentsNet = yearTotals.investments.income - yearTotals.investments.payments;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const yearTotalNet = yearExpensesNet + yearSavingsNet + yearInvestmentsNet;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>tableHTML += `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;tr class="bg-gray-100 font-bold border-t-2 border-gray-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;td class="py-3 px-2 font-bold"&gt;${currentYear} Total&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;td class="py-3 px-2 text-center text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-green-600"&gt;$${yearTotals.expenses.income.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-red-600"&gt;$${yearTotals.expenses.payments.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="font-bold ${yearExpensesNet &gt;= 0 ? 'text-green-600' : 'text-red-600'}"&gt;$${yearExpensesNet.toFixed(0)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;td class="py-3 px-2 text-center text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-green-600"&gt;$${yearTotals.savings.income.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-red-600"&gt;$${yearTotals.savings.payments.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="font-bold ${yearSavingsNet &gt;= 0 ? 'text-green-600' : 'text-red-600'}"&gt;$${yearSavingsNet.toFixed(0)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;td class="py-3 px-2 text-center text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-green-600"&gt;$${yearTotals.investments.income.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-red-600"&gt;$${yearTotals.investments.payments.toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="font-bold ${yearInvestmentsNet &gt;= 0 ? 'text-green-600' : 'text-red-600'}"&gt;$${yearInvestmentsNet.toFixed(0)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;td class="py-3 px-2 text-center text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-green-600"&gt;$${(yearTotals.expenses.income + yearTotals.savings.income + yearTotals.investments.income).toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-red-600"&gt;$${(yearTotals.expenses.payments + yearTotals.savings.payments + yearTotals.investments.payments).toFixed(0)}&lt;/span&gt; |<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="font-bold ${yearTotalNet &gt;= 0 ? 'text-green-600' : 'text-red-600'}"&gt;$${yearTotalNet.toFixed(0)}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>`;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>yearlyAnalysisTable.innerHTML = tableHTML;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Initialize</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>loadData();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>initializeMonth();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>updateMonthDisplay();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>updateAllDisplays();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Enter key handlers</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('incomeAmount').addEventListener('keypress', function(e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (e.key === 'Enter') addIncome();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('expenseAmount').addEventListener('keypress', function(e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (e.key === 'Enter') addExpense();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script&gt;(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c5e7f4106bce1a',t:'MTc1NzQxMjczNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&amp;&amp;(document.onreadystatechange=e,c())}}}})();&lt;/script&gt;&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
